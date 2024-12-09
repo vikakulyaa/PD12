@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatūras ieraksti</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Temperatūras ieraksti</h1>
+
+    <!-- Datu ievades forma -->
+    <form id="tempForm">
+        <label for="date">Datums:</label>
+        <input type="date" id="date" class="input-field" required>
+
+        <label for="min_temp">Mazākā temperatūra:</label>
+        <input type="number" step="0.1" id="min_temp" class="input-field" required>
+
+        <label for="max_temp">Lielākā temperatūra:</label>
+        <input type="number" step="0.1" id="max_temp" class="input-field" required>
+
+        <button type="submit" class="submit-button">Pievienot</button>
+    </form>
+    
+    <!-- Tabulas nosaukums -->
+    <h2>Temperatūru saraksts</h2>
+
+    <!-- Tabula datu attēlošanai -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Datums</th>
+                <th>Mazākā temperatūra</th>
+                <th>Lielākā temperatūra</th>
+                <th>Vidējā temperatūra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JavaScript šeit pievienos rindas -->
+        </tbody>
+    </table>
+
+    <!-- Teksts vidējai temperatūrai -->
+    <p id="avgTemp">Vidējā temperatūra visām dienām:</p>
+    <script src="../static/script.js"></script>
+
+</body>
+</html>
